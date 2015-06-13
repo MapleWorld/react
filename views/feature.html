@@ -1,0 +1,207 @@
+<!--Bootstrapped header -->
+<!-- Header -->
+<% include header.html %>
+
+<!--Bootstrapped nav bar -->
+<!-- Navigation -->
+<% include navbar.html %>
+
+<!--Bootstrapped menu bar -->
+<!-- Menu -->
+<% include menu.html %>
+
+<style type="text/css">
+    .container {
+        box-sizing: border-box;
+        width:80%;
+        margin:auto; 
+    }
+    .item {
+        margin: 1%;
+		width:30%;
+        box-sizing: border-box;
+        width: 30%;
+        height: 30%;
+        float: left;
+        overflow:hidden;
+    }
+    h3,p {
+        color: #ffffff;
+
+        padding: 5%;
+    }
+    .free-wall {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+<!-- Page Content -->
+<div class="container">
+	<div class="row">
+
+        <div id="freewall" class="free-wall">
+			<p>Unique Features</p>
+	        <a href="http://www-01.ibm.com/software/data/db2/linux-unix-windows/autonomics.html">
+	            <div class = "item" >
+	            	<h3>Autonomics</h3>
+	            	<p>Automate tasks such as memory allocation, storage management, health monitoring and business policy maintenance to improve IT productivity</p>
+	            </div>
+	        </a>
+	
+	        <a href="http://www-01.ibm.com/software/data/db2/linux-unix-windows/db2-blu-acceleration/">
+		        <div class = "item">
+		            <h3>BLU Acceleration</h3>
+				    <p>Achieve breakthrough in-memory performance for speed of thought analytics without
+					    the constraints of other in-memory solutions and with the simplicity of “load and go” setup.</p>
+		        </div>
+	        </a>
+	
+	        <a href="http://www-01.ibm.com/software/data/db2/linux-unix-windows/warehouse-analytics/">
+		        <div class = "item">
+		            <h3>Data Warehouse Analytics</h3>
+				    <p>Provide high performing predictive and pattern analysis without moving your data into proprietary data mining platforms.</p>
+		        </div>
+	        </a>
+	
+	
+	        <a href="http://www-01.ibm.com/software/data/db2/linux-unix-windows/high-availability.html">
+		        <div class = "item">
+		            <h3>High Availability</h3>
+				    <p>Help ensure your database remains operational during planned or unplanned outages. Reduce downtime to help meet strict
+					    Service Level Agreements (SLAs) with no loss of data during infrastructure failures.</p>
+				</div>
+	        </a>
+	
+	        <a href="http://www-01.ibm.com/software/data/db2/linux-unix-windows/sql-compatibility.html">
+		        <div class = "item">
+		            <h3>SQL compatibility</h3>
+				    <p>Minimize the cost and risk of moving legacy applications built for the Oracle® Database to DB2.
+					    Best of all, your staff can leverage existing skills and hit the ground running.</p>
+				</div>
+	        </a>
+	
+	        <a href="http://www-01.ibm.com/software/data/db2/linux-unix-windows/performance-optimization.html">
+		        <div class = "item">
+		            <h3>Performance Optimization</h3>
+				    <p>Save money, lower risks and improve IT productivity by easily optimizing performance and increase DBA productivity.</p>
+				</div>
+	        </a>
+	
+	
+	        <a href="http://www-01.ibm.com/software/data/db2/linux-unix-windows/editions-features-purescale.html">
+	        	<div class ="item">
+			    	<h3>pureScale<sup>®</sup></h3>
+			    	<p>Achieve high availability and dynamic scalability for transaction processing. Adapt to changing business
+					    needs by allocating more resources for performance or for growth, at will.</p>
+	        	</div>
+	        </a>
+	
+	        <a href="http://www-01.ibm.com/software/data/db2/xml/">
+	        	<div class ="item">
+	        		<h3>pureXML<sup>®</sup></h3>
+					<p>Store, process and manage XML data in its native hierarchical format. 
+						Minimize administrative overhead, simplify database design, and reduce the complexity of your XML applications.</p>
+				</div>
+	        </a>
+	
+	        <a href="http://www-01.ibm.com/software/data/db2/security/">
+	        	<div class ="item">
+	        		<h3>Security</h3>
+					<p>Include a comprehensive suite of security features that effectively and decisively minimize threats: 
+						authentication, authorization, trusted context, auditing, encryption, and fine-grain controls.</p>
+				</div>
+	        </a>
+	
+	        <a href="http://www.ibm.com/software/data/db2/linux-unix-windows/nosql-support.html">
+		        <div class ="item">
+		        	<h3>NoSQL Support</h3>
+					<p>Choose the most appropriate SQL or NoSQL data model for each data management project.</p>
+				</div>
+	        </a>
+	
+	        <a href="http://www-01.ibm.com/software/data/db2/linux-unix-windows/storage-compression.html">
+	        	<div class ="item">
+	        		<h3>Storage Optimization</h3>
+					<p>Reduce storage costs and increase performance with industry leading technologies that compress tables, 
+						indexes, archive logs, temporary space, LOBs, XML, and back-up data</p>
+				</div>
+			</a>
+	
+			<a href="http://www-01.ibm.com/software/data/db2/linux-unix-windows/time-travel-query.html">
+	        	<div class ="item">
+	        		<h3>Time Travel Query</h3>
+					<p>Travel to the past and the future, and query your data as it appears at different points in 
+						time without having to build, maintain, and administer a complex temporal infrastructure.</p>
+				</div>
+	        </a>
+        </div>
+	</div>
+</div>
+<!-- Bootstrapped Footer -->
+<!-- Footer -->
+
+        <script type="text/javascript">
+
+            var colour = [
+                "rgb(142, 68, 173)",
+                "rgb(243, 156, 18)",
+                "rgb(211, 84, 0)",
+                "rgb(0, 106, 63)",
+                "rgb(41, 128, 185)",
+                "rgb(192, 57, 43)",
+                "rgb(135, 0, 0)",
+                "rgb(39, 174, 96)"
+            ];
+
+            $(function() {
+                var wall = new Freewall("#freewall");
+                wall.reset({
+                    selector: '.level1',
+                    cellW: 350,
+                    cellH: 200,
+                    fixSize: 0,
+                    gutterX: 20,
+                    gutterY: 10,
+                    onResize: function() {
+                        wall.fitZone();
+                    }
+                });
+                wall.fitZone();
+                $(window).trigger("resize");
+            });
+
+            $(".free-wall .item").each(function() {
+                var backgroundColor = colour[colour.length * Math.random() << 0];
+                $(this).css({
+                    backgroundColor: backgroundColor
+                });
+            });
+
+
+            $(function() {
+                var wall = new freewall("#freewall");
+                wall.reset({
+                    selector: '.item',
+                    animate: false,
+                    cellW: 200,
+                    cellH: 250,
+                    delay: 30,
+                    onResize: function() {
+                        wall.refresh($(window).width() - 30, $(window).height() - 30);
+                    }
+                });
+                // caculator width and height for IE7;
+                wall.fitZone($(window).width() - 30 , $(window).height() - 30);
+            });
+
+            $(".free-wall .item").each(function() {
+                $(this).mouseenter(function(){
+                    $(this).fadeTo('slow', 0.5);
+                });
+                $(this).mouseleave(function(){
+                    $(this).fadeTo('slow', 1);
+                });
+            });
+        </script>
+<% include footer.html %>

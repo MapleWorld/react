@@ -1,0 +1,10 @@
+applications:
+- services:
+  - SQL Database-pd
+  disk_quota: 1024M
+  host: interactivedb2
+  name: interactiveDB2
+  path: .
+  domain: mybluemix.net
+  instances: 1
+  memory: 256M

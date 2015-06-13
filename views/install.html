@@ -1,0 +1,106 @@
+<!--Bootstrapped header -->
+<!-- Header -->
+<% include header.html %>
+
+<!--Bootstrapped nav bar -->
+<!-- Navigation -->
+<% include navbar.html %>
+
+<!--Bootstrapped menu bar -->
+<!-- Menu -->
+<% include menu.html %>
+
+
+
+<!-- Page Content -->
+<div class="container">
+	<div class="row">
+
+		<div class="layout">
+			<div id="freewall" class="free-wall">
+				<div class="item img-demo7 size21 level1">
+						<h2>Window 8 metro style</h2>
+						<div>Freewall is a cross-browser and responsive jQuery</div>
+				</div>
+		
+				<div class="item size22 level1"><i class="img-demo1"></i></div>
+				
+				<div class="item size22 level1"><i class="img-demo2"></i></div>
+				
+				<div class="item size21 level1"><div class="img-demo3"></div></div>
+		
+				<div class="item size21 level1"><div class="img-demo4"></div></div>
+				
+				<div class="size21 level1" data-nested=".size11" data-cellW=150 data-cellH=150 data-gutterX=10>
+					<div class="item size11"><i class="img-demo8"></i></div>
+					<div class="item size11"><i class="img-demo9"></i></div>
+				</div>
+				
+				<div class="item size21 level1 desktop-box">
+					<div class="img-demo6">
+						<div class="text-bottom">
+							<h1><a href="http://vnjs.net/www/project/freewall/">Free Wall</a></h1>
+						</div>
+					</div>
+				</div>
+				<div class="item size21 level1"><div class="img-demo5"></div></div>
+			</div>
+		</div> <!-- layout -->
+	
+	</div>
+</div>
+
+<script type="text/javascript">
+	
+	var colour = [
+		"rgb(142, 68, 173)",
+		"rgb(243, 156, 18)",
+		"rgb(211, 84, 0)",
+		"rgb(0, 106, 63)",
+		"rgb(41, 128, 185)",
+		"rgb(192, 57, 43)",
+		"rgb(135, 0, 0)",
+		"rgb(39, 174, 96)"
+	];
+
+	$(".free-wall .item").each(function() {
+		var backgroundColor = colour[colour.length * Math.random() << 0];
+		$(this).css({
+			backgroundColor: backgroundColor
+		});
+	});
+
+	$(function() {
+		var wall = new Freewall("#freewall");
+		wall.reset({
+			selector: '.level1',
+			cellW: 320,
+			cellH: 160,
+			fixSize: 0,
+			gutterX: 20,
+			gutterY: 10,
+			onResize: function() {
+				wall.fitZone();
+			}
+		});
+		wall.fitZone();
+		$(window).trigger("resize");
+	});
+    $(".free-wall .item").each(function() {
+        $(this).mouseenter(function(){
+            $(this).fadeTo('slow', 0.5);
+        });
+        $(this).mouseleave(function(){
+            $(this).fadeTo('slow', 1);
+        });
+    });
+</script>
+
+<!-- Bootstrapped Footer -->
+<!-- Footer -->
+<% include footer.html %>
+
+
+
+	
+
